@@ -358,6 +358,7 @@
   margin: 15px 0;
   resize: none;
 }
+
 .contact-form-input-submit {
   padding: 10px 25px;
   font-size: 13px;
@@ -369,4 +370,58 @@
   font-family: Raleway, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+footer {
+  background: #222;
+  text-align: center;
+  padding: 40px 20px;
+  color: #FFF;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social-href {
+  display: block;
+  width: 36px;
+  height: 36px;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, .1);
+  color: rgba(255, 255, 255, .2);
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 35px;
+  margin: 5px;
+}
+
+.footer-social-href:hover {
+  border: 1px solid rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, .8);
+}
+
+.footer-text {
+  font-family: Raleway, "Times New Roman", Times, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.5;
+  color: #FFF;
+}
+
+.footer-text-span {
+  color: #ff5252;
+}
+
+.footer-text-href {
+  color: #E7746F;
+  text-decoration: none;
+  border-bottom: 1px dotted #fff;
+  transition: all 0.125s ease-in-out 0s;
+}
+
+.footer-text-href:hover {
+  color: #999;
 }
