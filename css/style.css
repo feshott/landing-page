@@ -267,3 +267,44 @@
   color: #fff;
   text-align: center;
 }
+.start {
+  background-image: url(../images/item-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 50px 0;
+  text-align: center;
+}
+.start-title {
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  font-family: Raleway, sans-serif;
+  color: white;
+  
+}
+.start-text {
+  line-height: 1.8;
+  font-family: Raleway, sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  
+}
+.start-href {
+  display: inline-block;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #333;
+  background: rgba(255, 255, 255, .8);
+  padding: 10px 25px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
