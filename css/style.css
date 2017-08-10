@@ -129,9 +129,11 @@
 
 .services-header {
   padding: 0 20px;
+  padding-bottom: 50px;
 }
 
-.services-header-title {
+.services-header-title,
+.work-header-title {
   text-align: center;
   font-style: normal;
   font-weight: 800;
@@ -145,14 +147,16 @@
   margin-bottom: 30px
 }
 
-.services-header-line {
+.services-header-line,
+.work-header-line {
   background: rgba(135, 135, 135, 0.5);
   width: 100px;
   height: 1px;
   margin: 30px auto;
 }
 
-.services-header-text {
+.services-header-text,
+.work-header-text {
   font-family: Raleway, "Times New Roman", Times, sans-serif;
   font-style: normal;
   font-size: 18px;
@@ -180,6 +184,7 @@
   height: 32px;
   padding: 15px;
   margin-bottom: 15px;
+  vertical-align: middle;
 }
 
 .services-box-block-title {
@@ -196,4 +201,69 @@
   font: 300 14px/1.8 'Raleway', sans-serif;
   text-align: center;
   color: #666;
+}
+
+.work {
+  padding: 100px 0;
+}
+
+.work-header {
+  padding: 0 20px;
+  padding-bottom: 50px;
+}
+
+.work-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.work-box-block {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.work-box-block-img {
+  width: 278px;
+  height: 180px;
+  vertical-align: middle;
+  position: relative;
+}
+
+.work-box-block-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  padding: 2em;
+  box-sizing: border-box;
+}
+
+.work-box-block-container-title {
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  color: #fff;
+  word-spacing: -0.15em;
+  letter-spacing: 3px;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 1em 0;
+  text-align: center;
+}
+
+.work-box-block-container-title-span {
+  font-weight: 800;
+}
+
+.work-box-block-container-text {
+  line-height: 1.8;
+  font-family: Raleway, sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 68.5%;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
 }
