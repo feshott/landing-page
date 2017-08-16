@@ -68,6 +68,7 @@
 .menu {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .menu-logo {
@@ -78,19 +79,20 @@
   font-family: Lobster, cursive;
   letter-spacing: 3px;
   color: #222;
-  padding: 15px 15px;
+  padding: 15px 0;
 }
 
 .menu-btn {
   font-size: 20px;
   border: none;
   background: none;
-  padding: 10px 20px;
+  padding: 10px 10px;
 }
 
 .menu-trigle {
   display: none;
   position: absolute;
+  top: 55px;
   width: 100%;
   background-color: white;
 }
@@ -118,7 +120,7 @@
 }
 
 .services-header {
-  padding: 0 20px;
+ 
   padding-bottom: 50px;
 }
 
@@ -155,17 +157,13 @@
   line-height: 1.5;
 }
 
-.services-box {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 20px;
-}
+
 
 .services-box-block {
   background: #fff;
   border-bottom: 1px solid #d4d4d4;
   text-align: center;
-  padding: 40px 20px;
+  padding: 40px 0;
   margin: 0 0 20px;
 }
 
@@ -198,15 +196,11 @@
 }
 
 .work-header {
-  padding: 0 20px;
+  
   padding-bottom: 50px;
 }
 
-.work-box {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 20px;
-}
+
 
 .work-box-block {
   position: relative;
@@ -262,7 +256,7 @@
   padding: 100px 0;
 }
 .skill-header {
-  padding: 0 20px;
+ 
   padding-bottom: 50px;
 }
 .skill-header-title{
@@ -292,20 +286,12 @@
   color: #7F7F7F;
   line-height: 1.5;
 }
-.skill-box {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 20px;
-  justify-content: center;
-}
-.skill-box-block {
-  margin-bottom: 30px;
-}
+
 .skill-box-block-progress_bar {
   width: 140px;
   height: 140px;
   background-color: aquamarine;
-  margin: 40px;
+  margin: 40px auto;
 }
 
 .start {
@@ -385,6 +371,7 @@
 }
 .feedback-box {
   border-top: red solid 1px;
+  padding-top: 30px;
 }
 .feedback-box-text{ 
   font-family: 'Raleway', sans-serif;
@@ -445,6 +432,7 @@
   width: 100%;
   background: #FFF;
   border: 1px solid #D8E1E4;
+  border-radius: 5px;
   color: #666;
   font-size: 12px;
   padding: 5px 15px;
@@ -526,4 +514,21 @@ footer {
   0%   { top:0px;  opacity: 0;}
   30%  { top:10px; opacity: 1;}
   100% { top:25px; opacity: 0;}
+}
+
+@media  (min-width: 768px) {
+  .menu-btn {
+   display: none;
+  }
+  .menu-trigle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+    width: auto;
+  }
+  .work-box-block-container {
+   padding: 1em; 
+  }
+  
 }
