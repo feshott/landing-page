@@ -129,7 +129,7 @@
 .services-header-title,
 .work-header-title,
 .skill-header-title,
-.contact-title,
+.contact-header-title,
 .feedback-header-title {
   text-align: center;
   font-style: normal;
@@ -148,7 +148,7 @@
 .work-header-line,
 .skill-header-line,
 .feedback-header-line,
-.contact-line {
+.contact-header-line {
   background: rgba(135, 135, 135, 0.5);
   width: 100px;
   height: 1px;
@@ -159,7 +159,7 @@
 .work-header-text,
 .skill-header-text,
 .feedback-header-text,
-.contact-text {
+.contact-header-text {
   font-family: Raleway, "Times New Roman", Times, sans-serif;
   font-style: normal;
   font-size: 18px;
