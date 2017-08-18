@@ -119,13 +119,18 @@
   padding: 100px 0;
 }
 
-.services-header {
- 
+.services-header,
+.skill-header,
+.work-header,
+.feedback-header {
   padding-bottom: 50px;
 }
 
 .services-header-title,
-.work-header-title {
+.work-header-title,
+.skill-header-title,
+.contact-title,
+.feedback-header-title {
   text-align: center;
   font-style: normal;
   font-weight: 800;
@@ -140,7 +145,10 @@
 }
 
 .services-header-line,
-.work-header-line {
+.work-header-line,
+.skill-header-line,
+.feedback-header-line,
+.contact-line {
   background: rgba(135, 135, 135, 0.5);
   width: 100px;
   height: 1px;
@@ -148,7 +156,10 @@
 }
 
 .services-header-text,
-.work-header-text {
+.work-header-text,
+.skill-header-text,
+.feedback-header-text,
+.contact-text {
   font-family: Raleway, "Times New Roman", Times, sans-serif;
   font-style: normal;
   font-size: 18px;
@@ -156,8 +167,6 @@
   color: #7F7F7F;
   line-height: 1.5;
 }
-
-
 
 .services-box-block {
   background: #fff;
@@ -194,13 +203,6 @@
 .work {
   padding: 100px 0;
 }
-
-.work-header {
-  
-  padding-bottom: 50px;
-}
-
-
 
 .work-box-block {
   position: relative;
@@ -255,37 +257,6 @@
   background: #f5f5f5;
   padding: 100px 0;
 }
-.skill-header {
- 
-  padding-bottom: 50px;
-}
-.skill-header-title{
-  text-align: center;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.2;
-  font-family: Raleway, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #222;
-  margin: 0;
-  margin-bottom: 30px;
-}
-.skill-header-line {
-  background: rgba(135, 135, 135, 0.5);
-  width: 100px;
-  height: 1px;
-  margin: 30px auto;
-}
-.skill-header-text{
-  font-family: Raleway, "Times New Roman", Times, sans-serif;
-  font-style: normal;
-  font-size: 18px;
-  text-align: center;
-  color: #7F7F7F;
-  line-height: 1.5;
-}
 
 .skill-box-block-progress_bar {
   width: 140px;
@@ -336,94 +307,37 @@
   border-radius: 5px;
   margin-top: 20px;
 }
+
 .feedback {
   background: #f5f5f5;
   padding: 100px 20px;
 }
-.feedback-header {
-  padding: 0 20px;
-  padding-bottom: 50px;
-}
-.feedback-header-title {
-  text-align: center;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.2;
-  font-family: Raleway, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #222;
-}
-.feedback-header-line {
-  background: rgba(135, 135, 135, 0.5);
-  width: 100px;
-  height: 1px;
-  margin: 30px auto;
-}
-.feedback-header-text {
-  font-family: Raleway, "Times New Roman", Times, sans-serif;
-  font-style: normal;
-  font-size: 18px;
-  text-align: center;
-  color: #7F7F7F;
-  line-height: 1.5;
-}
+
 .feedback-box {
   border-top: red solid 1px;
   padding-top: 30px;
 }
-.feedback-box-text{ 
+
+.feedback-box-text {
   font-family: 'Raleway', sans-serif;
   font-size: 1.6em;
   color: #888;
   font-weight: 300;
   margin: 0.4em 0 1em;
-  
 }
+
 .feedback-box-text-span {
   display: block;
   margin-top: 30px;
-  
   font-size: 0.6em;
-  
 }
+
 .feedback-box-img {
   width: 100%;
 }
 
-
-
 .contact {
   padding: 100px 20px;
-}
-
-.contact-title {
-  text-align: center;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.2;
-  font-family: Raleway, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #222;
-}
-
-.contact-line {
-  background: rgba(135, 135, 135, 0.5);
-  width: 100px;
-  height: 1px;
-  margin: 30px auto;
-}
-
-.contact-text {
-  font-family: Raleway, "Times New Roman", Times, sans-serif;
-  font-style: normal;
-  font-size: 18px;
-  text-align: center;
-  color: #7F7F7F;
-  line-height: 1.5;
 }
 
 .contact-form {}
@@ -441,6 +355,10 @@
   line-height: 1.8;
   margin: 15px 0;
   resize: none;
+}
+
+.contact-form-input-submit:hover {
+  background-color: #222;
 }
 
 .contact-form-input-submit {
@@ -510,15 +428,24 @@ footer {
   color: #999;
 }
 
-@keyframes drop	{
-  0%   { top:0px;  opacity: 0;}
-  30%  { top:10px; opacity: 1;}
-  100% { top:25px; opacity: 0;}
+@keyframes drop {
+  0% {
+    top: 0px;
+    opacity: 0;
+  }
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
 }
 
-@media  (min-width: 768px) {
+@media (min-width: 768px) {
   .menu-btn {
-   display: none;
+    display: none;
   }
   .menu-trigle {
     display: flex;
@@ -528,7 +455,16 @@ footer {
     width: auto;
   }
   .work-box-block-container {
-   padding: 1em; 
+    padding: 1em;
   }
-  
+}
+
+@media (min-width: 992px) {
+  .services-header-title,
+  .work-header-title,
+  .skill-header-title,
+  .contact-title,
+  .feedback-header-title {
+    font-size: 30px;
+  }
 }
