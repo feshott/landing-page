@@ -95,6 +95,7 @@
   top: 55px;
   width: 100%;
   background-color: white;
+  z-index: 1;
 }
 
 .menu-trigle-a {
@@ -207,6 +208,7 @@
 .work-box-block {
   position: relative;
   margin-bottom: 30px;
+  padding: 0 10px;
 }
 
 .work-box-block-img {
