@@ -261,11 +261,42 @@
   padding: 100px 0;
 }
 
-.skill-box-block-progress_bar {
-  width: 140px;
-  height: 140px;
-  background-color: aquamarine;
-  margin: 40px auto;
+.skill-block {
+  
+  text-align: center;
+  margin-bottom: 50px;
+}
+.skill-block-title {
+  font-family: Raleway, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: 4px;
+  color: #222;
+  text-transform: uppercase;
+  margin: 20px;
+}
+.chart {
+  position: relative;
+  display: inline-block;
+  width: 170px;
+  height: 170px;
+  text-align: center;
+  
+}
+.percent {
+  display: inline-block;
+  line-height: 1.33;
+  position: absolute;
+  left: 64px;
+  top: 64px;
+  font-family: Raleway, "Times New Roman", Times, sans-serif;
+  font-size: 30px;
+  color: #333;
+}
+.percent:after {
+  content: '%';
+  margin-left: 0.1em;
+  font-size: .8em;
 }
 
 .start {
@@ -451,7 +482,7 @@ footer {
     display: none;
   }
   .menu-trigle {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     align-items: center;
     position: static;

@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.3.6/scrollreveal.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/jquery.easypiechart.js"></script>
   <script src="js/script.js" defer></script>
 </head>
 
@@ -24,7 +25,7 @@
         <h1 class="intro-block-h1">Full Stack Web developer</h1>
         <p class="intro-block-title">creating modern and responsive Web Application</p>
       </div>
-      <a href="#" class="intro-href">
+      <a href="#start" class="intro-href">
         <div class="intro-href-block"> <span>
          <i class="fa fa-angle-down fa-2x"></i>
        </span> </div>
@@ -34,7 +35,7 @@
   <main>
     <section >
       <div class="container">
-        <div class="menu"> <a href="#" class="menu-logo">John Doe</a>
+        <div class="menu" id="start"> <a href="#" class="menu-logo">John Doe</a>
           <button class="menu-btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
           <div class="menu-trigle"> <a href="#" class="menu-trigle-a">Home</a> <a href="#" class="menu-trigle-a">Services</a> <a href="#" class="menu-trigle-a">Works</a> <a href="#" class="menu-trigle-a">Skills</a> <a href="#" class="menu-trigle-a">Testimonials</a> <a href="#" class="menu-trigle-a">Contact</a></div>
         </div>
@@ -146,6 +147,7 @@
         </div>
       </div>
     </section>
+    
     <section>
       <div class="skill">
         <div class="container">
@@ -160,21 +162,23 @@
           </div>
           <div class="row">
             <div class="col-xs-12 col-md-6 col-lg-3">
-              <div class="skill-box-block-progress_bar"></div>
+              <div class="skill-block scrollRevial-left"><span class="chart" data-percent="73" data-scale-color="#ffb400"><span class="percent">73</span></span><h3 class="skill-block-title">Programming</h3></div>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-3">
-              <div class="skill-box-block-progress_bar"></div>
+              <div class="skill-block scrollRevial-left"><span class="chart" data-percent="88" data-scale-color="#ffb400"><span class="percent">88</span></span><h3 class="skill-block-title">Design</h3></div>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-3">
-              <div class="skill-box-block-progress_bar"></div>
+              <div class="skill-block scrollRevial-right"><span class="chart" data-percent="71" data-scale-color="#ffb400"><span class="percent">71</span></span><h3 class="skill-block-title">Marketing</h3></div>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-3">
-              <div class="skill-box-block-progress_bar"></div>
+              <div class="skill-block scrollRevial-right"><span class="chart" data-percent="83" data-scale-color="#ffb400"><span class="percent">83</span></span><h3 class="skill-block-title">UI / UX</h3></div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    
+    
     <section>
       <div class="start">
         <h2 class="start-title scrollRevial-right">ARE YOU READY TO START?</h2>

@@ -62,5 +62,13 @@ sr.reveal('.scrollRevial-delay-04', {
   delay: 400,
 });
 
+$(function() {
+  $('.chart').easyPieChart({
+    lineCap: 'butt',
+    lineWidth: 10 ,
+    size: 170,
+  });
+});
+
 
 
