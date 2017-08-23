@@ -1,6 +1,7 @@
 header,main,footer{
   overflow: hidden;
 }
+
 .intro {
   display: flex;
   justify-content: center;
@@ -73,8 +74,15 @@ header,main,footer{
   display: flex;
   justify-content: space-between;
   position: relative;
+  
 }
-
+.menu_fixed {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+}
 .menu-logo {
   display: block;
   text-decoration: none;

@@ -71,4 +71,20 @@ $(function() {
 });
 
 
+// фиксированное меню
+$(window).scroll(function (event) {
+  actualMenu();
+});
+
+function actualMenu() {
+
+  if (pageYOffset >= document.querySelector('main').offsetTop) {
+    $('#start').addClass('menu_fixed');
+  }
+  else {
+    $('#start').removeClass('menu_fixed');
+  }
+}
+
+
 
