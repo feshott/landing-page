@@ -86,5 +86,18 @@ function actualMenu() {
   }
 }
 
+// Плавный скролл
+
+$('.intro-href').on('click', goToAnchor('#start')); //эту строку можно повторять для разных кнопок и анкеров
+
+function goToAnchor(name){
+  return function (event) {
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: $(name).offset().top
+    }, 1000);
+  };
+}
+
 
 
