@@ -1,3 +1,6 @@
+body {
+  min-width: 300px;
+}
 header,main,footer{
   overflow: hidden;
 }
@@ -41,23 +44,23 @@ header,main,footer{
   margin: 0.375rem 0;
 }
 
-.intro-href {}
 
-.intro-href-block {
+
+.intro-href {
   position: absolute;
-  left: 50%;
+  
   bottom: 1.25rem;
   border: 0.125rem solid #fff;
   border-radius: 50%;
   height: 3.125rem;
   width: 3.125rem;
-  margin-left: -1.25rem;
+  
   display: block;
   z-index: 10;
   text-align: center;
 }
 
-.intro-href-block span {
+.intro-href span {
   position: relative;
   color: #fff;
   -webkit-animation-name: drop;
