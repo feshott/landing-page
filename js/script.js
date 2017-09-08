@@ -1,9 +1,7 @@
 $(function () {
 
   $('.menu-btn').click(function(){
-    $('.menu-trigle').slideToggle("slow", function() {
-
-    });
+    $('.menu-trigle').slideToggle("slow");
 
   });
 });
@@ -84,6 +82,19 @@ function actualMenu() {
   else {
     $('#start').removeClass('menu_fixed');
   }
+}
+
+// Плавный скролл
+
+$('.intro-href').on('click', goToAnchor('#start')); //эту строку можно повторять для разных кнопок и анкеров
+
+function goToAnchor(name){
+  return function (event) {
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: $(name).offset().top
+    }, 1000);
+  };
 }
 
 
